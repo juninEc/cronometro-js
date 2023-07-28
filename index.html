@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cronômetro</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <h1>CRONÔMETRO</h1>
+    <main class="principal">
+      <div class="tempo">
+        <span id="horas">00</span>
+        <span class="ponto">:</span>
+        <span id="minutos">00</span>
+        <span class="ponto">:</span>
+        <span id="segundos">00</span>
+      </div>
+
+      <div class="caixa-btn">
+        <button class="btn-start" onclick="start()">START</button>
+        <button class="btn-pause" onclick="pause()">PAUSE</button>
+        <button class="btn-stop" onclick="reset()">STOP</button>
+      </div>
+
+      <script src="script.js"></script>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

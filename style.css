@@ -1,0 +1,91 @@
+:root {
+  --cor-fundo: #000000;
+  --cor-principal: #ffffff;
+  --cor-destaque: #e81566;
+  --cor-alternativa1: #2eff2e;
+  --cor-alternativa2: #ffcf14;
+  --cor-alternativa3: #ff0700;
+  --font-principal: "Lato", sans-serif;
+  --font-secundaria: "Roboto Condensed", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-principal);
+}
+body {
+  color: var(--cor-principal);
+  background: var(--cor-fundo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.tempo {
+  padding-bottom: 20px;
+}
+span {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+h1 {
+  color: var(--cor-destaque);
+  font-size: bold;
+  font-size: 50px;
+}
+
+#segundos {
+  color: var(--cor-destaque);
+}
+
+.caixa-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+
+button {
+  margin: 10px;
+  width: 80px;
+  height: 30px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: var(--cor-principal);
+}
+
+.btn-start {
+  background: var(--cor-alternativa1);
+}
+
+.btn-pause {
+  background: var(--cor-alternativa2);
+}
+
+.btn-stop {
+  background: var(--cor-alternativa3);
+}
+
+button:hover{
+    background: var(--cor-destaque);
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0px 0px 5px 5px  #e8156631;
+}
